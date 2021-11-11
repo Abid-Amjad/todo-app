@@ -34,7 +34,7 @@ app.patch('/todo/:id', (req, res) => {
 
 const mongoose = require('mongoose');
 const ToDo = require('./toDoModel.js').ToDo;
-const DB_URI = 'mongodb://<username>:<password>@<hostname>/<dbname>'; // Database connection
+const DB_URI = 'mongodb://abid:password@192.168.88.131:4102/iis'; // Database connection
 
 mongoose.connect(DB_URI).then(() => {
   console.log('Listening on port: ' + PORT);
